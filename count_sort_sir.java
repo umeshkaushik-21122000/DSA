@@ -22,8 +22,8 @@ public class count_sort_sir{
         int range=max-min+1;
         int []f=new int[range];
         int []ans=new int[a.length];
-        for(int i=0;i<a.length;i++){
-            f[a[i]-min]++;
+        for (int k : a) {
+            f[k - min]++;
         }
         for(int i=1;i<f.length;i++){
             f[i]=f[i]+f[i-1];
